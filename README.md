@@ -1,7 +1,7 @@
 # me-busy
 ---
 
-Angular google now like busy indicator directive.  See [Demo](./example/demo.html)
+Angular directive providing Google Now like busy indicator.  See [Demo](./example/demo.html)
 
 
 ## Development
