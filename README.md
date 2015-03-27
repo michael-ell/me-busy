@@ -17,4 +17,4 @@ Angular directive providing Google Now like busy indicator.  See [Demo](./exampl
 
 * ` gulp ` to bundle and watch src files for changes
 * ` gulp watch ` to watch src files and bundle / build dist files when changed
-* ` gulp bundle ` to combine / minify CSS and jshint, combine, and uglify js
+* ` gulp bundle ` to combine / minify CSS and jshint, combine, and uglify JS
