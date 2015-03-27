@@ -1,0 +1,30 @@
+{
+  "name": "me-busy",
+  "version": "1.0.0",
+  "authors": [
+    "Michael Ell <codell.concepts@gmail.com>"
+  ],
+  "description": "Angular google now like busy indicator directive",
+  "main": [
+    "dist/me-busy.js",
+    "dist/me-busy.css"
+  ],
+  "keywords": [
+    "angular",
+    "google",
+    "now",
+    "busy",
+    "indicator"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.15"
+  }
+}

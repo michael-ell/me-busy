@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Me Busy Demo</title>
+    <link rel="stylesheet" href="demo.css"/>
+    <link rel="stylesheet" href="../dist/me-busy.min.css"/>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../dist/me-busy.min.js"></script>
+    <script src="demo.js"></script>
+</head>
+<body ng-app="app">
+    <div ng-controller="a" class="card">
+        <div class="header">{{header}}</div>
+        <me-busy busy="busy"/>
+    </div>
+    <div ng-controller="b" class="card">
+        <div class="header">{{header}}</div>
+        <me-busy busy="isBusy"/>
+    </div>
+</body>
+</html>
