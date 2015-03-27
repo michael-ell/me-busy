@@ -3,7 +3,7 @@
 
 Angular directive providing Google Now like busy indicator.
 
-* [Example](./src/5b6c525bb8b7d1623328856f1b410338ed1446ad/example/demo.html?at=master)
+* [Example](./src/5b6c525bb8b7d1623328856f1b410338ed1446ad/example/?at=master)
 
 ## Development
 ---
