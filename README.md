@@ -1,7 +1,7 @@
 me-busy
 -------
 
-Angular directive providing a *Google Now* like busy indicator.
+An Angular directive providing a *Google Now* like busy indicator.
 
 * [Demo](http://plnkr.co/edit/2MWVZpiVRu4lAqWhUDBX?p=preview)
 * [Example](./src/5b6c525bb8b7d1623328856f1b410338ed1446ad/example/?at=master)
