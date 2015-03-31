@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
     plugins = require('gulp-load-plugins')(),
     del = require('del'),
+    karma = require('karma').server,
     tmp = '.tmp/',
     stylusFiles = 'src/**/*.styl',
     jsFiles = 'src/**/*.js',
@@ -30,7 +31,7 @@ gulp.task('stylus', function () {
         .pipe(gulp.dest(tmp));
 });
 
-gulp.task('js', ['lint'], function(){
+gulp.task('js', ['lint', 'test'], function(){
     gulp.src(jsFiles)
         .pipe(plugins.concat('me-busy.js'))
         .pipe(gulp.dest(dist))
@@ -45,6 +46,21 @@ gulp.task('lint', function(){
         .pipe(plugins.jshint())
         .pipe(plugins.jshint.reporter('default', {verbose: true}));
 });
+
+gulp.task('test', function(done){
+    test(false, done);
+});
+
+gulp.task('test-ci', function(done){
+    test(true, done);
+});
+
+function test(ci, done){
+    karma.start({
+        configFile: __dirname + '/karma.conf.js',
+        singleRun: ci
+    }, done);
+}
 
 gulp.task('watch', function(){
         gulp.start('bundle-css-watch', 'bundle-js-watch');
