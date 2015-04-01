@@ -1,6 +1,6 @@
 {
   "name": "me-busy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An Angular directive providing a Google Now like busy indicator.",
   "main": "index.js",
   "scripts": {
