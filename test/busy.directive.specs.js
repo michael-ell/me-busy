@@ -1,6 +1,6 @@
 'use strict';
 
-describe('when creating a busy indicator', function () {
+describe('the busy indicator', function () {
     var $compile,
         $rootScope,
         el;
@@ -13,18 +13,18 @@ describe('when creating a busy indicator', function () {
         el = $compile("<me-busy busy='busy'></me-busy>")($rootScope);
     }));
 
-    it('should initially hide the indicator', function () {
+    it('should initially be hidden', function () {
         $rootScope.$digest();
         expect(el.hasClass('invisible')).toEqual(true);
     });
 
-    it('should show the indicator when busy', function () {
+    it('should show when busy', function () {
         $rootScope.busy = true;
         $rootScope.$digest();
         expect(el.hasClass('invisible')).toEqual(false);
     });
 
-    it('should hide the indicator when not busy', function () {
+    it('should hide when not busy', function () {
         $rootScope.busy = false;
         $rootScope.$digest();
         expect(el.hasClass('invisible')).toEqual(true);
