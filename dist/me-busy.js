@@ -1,7 +1,10 @@
-/* jshint -W097 */
-'use strict';
-angular.module('me.busy', [])
-    .directive('meBusy', function(){
+(function() {
+
+    /* jshint -W097 */
+    'use strict';
+
+    var module = angular.module('me.busy', []);
+    module.directive('meBusy', function () {
         return {
             restrict: 'E',
             replace: true,
@@ -9,10 +12,10 @@ angular.module('me.busy', [])
             scope: {
                 busy: '='
             },
-            link: function(scope, el){
+            link: function (scope, el) {
                 el.addClass('invisible');
-                scope.$watch('busy', function(busy){
-                    if (busy === true){
+                scope.$watch('busy', function (busy) {
+                    if (busy === true) {
                         el.removeClass('invisible');
                     } else {
                         el.addClass('invisible');
@@ -21,3 +24,6 @@ angular.module('me.busy', [])
             }
         };
     });
+    return module;
+
+})();

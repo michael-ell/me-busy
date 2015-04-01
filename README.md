@@ -15,6 +15,6 @@ Prepare your environment
 Development commands
 --------------------
 
-* ` gulp ` to bundle and watch src files for changes
-* ` gulp watch ` to watch src files and bundle / build dist files when changed
+* ` gulp ` to bundle, test and watch src files for changes
+* ` gulp watch ` to watch src files and bundle and test dist files when changed
 * ` gulp bundle ` to combine / minify CSS and jshint, combine, and uglify JS

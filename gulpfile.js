@@ -31,8 +31,8 @@ gulp.task('stylus', function () {
         .pipe(gulp.dest(tmp));
 });
 
-gulp.task('js', ['lint', 'test'], function(){
-    gulp.src(jsFiles)
+gulp.task('js', ['lint'], function(){
+    return gulp.src(jsFiles)
         .pipe(plugins.concat('me-busy.js'))
         .pipe(gulp.dest(dist))
         .pipe(plugins.uglify({mangle: true}))
@@ -73,6 +73,7 @@ gulp.task('bundle-css-watch', function(){
 
 gulp.task('bundle-js-watch', function(){
     gulp.watch([jsFiles], ['js']);
+    gulp.start('test');
 });
 
 gulp.task('default', ['bundle', 'watch']);

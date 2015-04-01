@@ -4,17 +4,18 @@
   "authors": [
     "Michael Ell <codell.concepts@gmail.com>"
   ],
-  "description": "Angular google now like busy indicator directive",
+  "description": "An Angular directive providing a Google Now like busy indicator.",
   "main": [
     "dist/me-busy.js",
     "dist/me-busy.css"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/foo/bar.git"
+    "url": "https://github.com/michael-ell/me-busy"
   },
   "keywords": [
     "angular",
+    "directive",
     "google",
     "now",
     "busy",
