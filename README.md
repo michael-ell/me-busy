@@ -4,6 +4,7 @@ me-busy
 An Angular directive providing a *Google Now* like busy indicator.
 
 * [Demo](http://plnkr.co/2MWVZpiVRu4lAqWhUDBX)
+* [Example](https://github.com/michael-ell/me-busy/tree/master/example)
 
 Prepare your environment
 ------------------------
