@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/michael-ell/me-busy.svg?branch=master)](https://travis-ci.org/michael-ell/me-busy)
+
 me-busy
 -------
 
