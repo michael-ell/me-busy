@@ -11,7 +11,6 @@
 .loader {
   position: relative;
   margin: 0 auto;
-  overflow: hidden;
 }
 .loader > div {
   position: absolute;
